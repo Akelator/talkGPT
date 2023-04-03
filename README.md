@@ -1,4 +1,4 @@
-## TalkGPT
+# TalkGPT
 
 - Extensión chorra de Chrome para hablar con chatGPT.
 
