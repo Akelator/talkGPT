@@ -1,0 +1,16 @@
+<div class="btn"
+     [class.disabled]="recording || writting || speaking"
+     [class.recording]="recording"
+     [class.box]="writting || speaking">
+  <div *ngIf="recording"
+       class="waves"></div>
+  <div class="bubble"
+       (click)="onStart()"
+       [class.box]="writting || speaking">
+    <div class="mic"
+         [class.off]="writting || speaking"></div>
+    <div class="chat"
+         [class.on]="writting"></div>
+    <app-waveform [class.on]="speaking"></app-waveform>
+  </div>
+</div>

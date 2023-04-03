@@ -1,0 +1,6 @@
+{
+  "appDesc": {
+    "message": "Talk with chat GPT.",
+    "description": "Convert your voice to text and automatically send it to chat GPT. When he has answered you, you will hear the text of his answer in the language in which you have configured your browser."
+  }
+}

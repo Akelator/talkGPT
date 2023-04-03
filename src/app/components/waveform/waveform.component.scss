@@ -1,0 +1,83 @@
+:host {
+  display: block;
+  margin: 0;
+  width: 80px;
+  height: 80px;
+}
+
+.espectro {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  pointer-events: none;
+}
+
+.barra {
+  background-color: white;
+  width: 16px;
+  height: 80px;
+  border-radius: 8px;
+  animation: animacionEspectro 0.4s infinite;
+  transform: scaleY(0.2);
+}
+
+.barra:nth-child(1) {
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.barra:nth-child(2) {
+  height: 40px;
+  animation-delay: -0.06s;
+}
+
+.barra:nth-child(3) {
+  height: 60px;
+  animation-delay: -0.12s;
+}
+
+.barra:nth-child(4) {
+  height: 70px;
+  animation-delay: -0.18s;
+}
+
+.barra:nth-child(5) {
+  animation-delay: -0.24s;
+}
+
+.barra:nth-child(6) {
+  animation-delay: -0.3s;
+}
+
+.barra:nth-child(7) {
+  height: 70px;
+  animation-delay: -0.36s;
+}
+
+.barra:nth-child(8) {
+  height: 60px;
+  animation-delay: -0.42s;
+}
+
+.barra:nth-child(9) {
+  height: 40px;
+  animation-delay: -0.48s;
+}
+
+.barra:nth-child(10) {
+  height: 20px;
+  animation-delay: -0.54s;
+}
+
+@keyframes animacionEspectro {
+  0% {
+    transform: scaleY(0.3);
+  }
+  50% {
+    transform: scaleY(0.9);
+  }
+  100% {
+    transform: scaleY(0.3);
+  }
+}

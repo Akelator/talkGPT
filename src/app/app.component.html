@@ -1,0 +1,29 @@
+<div class="header">
+  <div class="icon"
+       [class.red]="!isChat"
+       [class.light]="recording"></div>
+  <div class="title">TalkGPT</div>
+  <div class="gap"></div>
+  <div *ngIf="isChat"
+       class="btn"
+       (click)="toggleOptions()">
+    <div class="menu"
+         [class.off]="optionsOpened"></div>
+    <div class="close"
+         [class.on]="optionsOpened"></div>
+  </div>
+</div>
+<div class="body">
+  <ng-container *ngIf="isChat; else notChat">
+    <app-options [class.on]="optionsOpened"></app-options>
+    <app-buttons [recording]="recording"
+                 [writting]="writting"
+                 [speaking]="speaking"
+                 (start)="start()"></app-buttons>
+  </ng-container>
+  <ng-template #notChat>
+    <div class="not-found">
+      CHAT<br>NOT FOUND
+    </div>
+  </ng-template>
+</div>

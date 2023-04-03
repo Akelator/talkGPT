@@ -1,0 +1,9 @@
+<div class="label">
+  {{ label }}
+</div>
+<label class="switch">
+  <input type="checkbox"
+         [(ngModel)]="checked"
+         (ngModelChange)="checkedChange.emit($event)">
+  <span class="slider"></span>
+</label>
