@@ -5,6 +5,7 @@
   "default_locale": "en",
   "version": "1.0",
   "action": {
+    "default_icon": "assets/icon-r.png",
     "default_popup": "index.html"
   },
   "permissions": ["ttsEngine", "activeTab"],
