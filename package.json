@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "copyfiles -f chrome-assets/background.js chrome-assets/content-script.js chrome-assets/manifest.json chrome && ng build && copyfiles -f chrome/background.js chrome/content-script.js chrome/manifest.json chrome-assets",
+    "build": "ng build && copyfiles -f src/chrome/background.js src/chrome/content-script.js src/chrome/manifest.json extension",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

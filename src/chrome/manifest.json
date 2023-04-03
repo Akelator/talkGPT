@@ -8,8 +8,6 @@
     "default_icon": "assets/icon-r.png",
     "default_popup": "index.html"
   },
-  "permissions": ["activeTab"],
-  "host_permissions": ["https://chat.openai.com/"],
   "background": {
     "service_worker": "background.js"
   },
