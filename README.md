@@ -14,7 +14,7 @@
 
 - Primero te haces un `npm install`.
 
-- Despúes te marcas un `npm run build`.
+- Después te marcas un `npm run build`.
 
 - Te vas al Chrome donde se administran las extensiones.
 
