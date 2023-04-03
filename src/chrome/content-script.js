@@ -30,7 +30,7 @@ function submitMessage(message) {
   const button = document.querySelector("button.absolute");
   button.removeAttribute("disabled");
   setTimeout(() => button.click());
-  awaitChatToStopTalking();
+  awaitChatToSartTalking();
 }
 
 function chatIsTalking() {
