@@ -1,6 +1,4 @@
 chrome?.runtime?.onMessage.addListener(async (message) => {
-  console.debug("MESSAGE");
-  console.log(message);
   if (message.sender === "extension")
     sendMessageToContentScript("submit", message.text);
   if (message.sender === "icon") setIcon(message.text);

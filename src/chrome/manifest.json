@@ -5,18 +5,17 @@
   "default_locale": "en",
   "version": "1.0",
   "action": {
-    "default_icon": "assets/icon-r.png",
     "default_popup": "index.html"
   },
+  "permissions": ["ttsEngine", "activeTab"],
   "background": {
     "service_worker": "background.js"
   },
   "content_scripts": [{
-    "matches": ["<all_urls>"],
+    "matches": ["https://chat.openai.com/*"],
     "js": ["content-script.js"]
   }],
   "icons": {
     "128": "assets/icon.png"
   }
-
 }
