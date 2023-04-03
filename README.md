@@ -1,6 +1,6 @@
 ## TalkGPT
 
-- Extensión chorra para Chrome para hablar con chatGPT.
+- Extensión chorra de Chrome para hablar con chatGPT.
 
 - ¿Cansado de escribir tus preguntas chorras?
 
