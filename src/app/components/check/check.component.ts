@@ -1,13 +1,15 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from "@angular/core";
 
 @Component({
-  selector: 'app-check',
-  templateUrl: './check.component.html',
-  styleUrls: ['./check.component.scss'],
+  selector: "app-check",
+  templateUrl: "./check.component.html",
+  styleUrls: ["./check.component.scss"],
 })
 export class CheckComponent {
-  @Input() label: string = 'Label';
+  @Input() label: string = "Label";
   @Input() checked: boolean = false;
+
   @Output() checkedChange = new EventEmitter<boolean>();
+
   constructor() {}
 }

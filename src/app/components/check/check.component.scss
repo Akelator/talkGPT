@@ -1,5 +1,4 @@
 :host {
-  --transition: 200ms;
   --size: 20px;
   display: flex;
   font-size: 16px;
@@ -13,11 +12,9 @@
   width: calc(var(--size) * 2);
   height: calc(var(--size) + 4px);
 }
-
 .switch input {
   display: none;
 }
-
 .slider {
   position: absolute;
   cursor: pointer;
@@ -25,11 +22,10 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #343541;
+  background-color: var(--grey-1);
   transition: var(--transition);
   border-radius: calc(var(--size) + 4px);
 }
-
 .slider:before {
   position: absolute;
   content: "";
@@ -37,15 +33,13 @@
   width: calc(var(--size) - 4px);
   left: 4px;
   bottom: 4px;
-  background-color: #7d7d80;
+  background-color: var(--grey-3);
   transition: var(--transition);
   border-radius: 50%;
 }
-
 input:checked + .slider::before {
-  background-color: #1cc298;
+  background-color: var(--green-2);
 }
-
 input:checked + .slider:before {
   transform: translateX(calc(var(--size) - 4px));
 }

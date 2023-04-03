@@ -1,9 +1,9 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
 
-import { AvailabilityService } from './availability.service';
+import { AvailabilityService } from ".";
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: "root",
 })
 export class Text2SpeechService {
   private utterance: any;
@@ -11,12 +11,10 @@ export class Text2SpeechService {
   constructor(private availability: AvailabilityService) {}
 
   speak(text: string): void {
-    if ('speechSynthesis' in window) {
+    if ("speechSynthesis" in window) {
       this.startSpeech(text);
     } else {
-      console.error(
-        'tu navegador no es compatible con la API de síntesis de voz.'
-      );
+      console.error("tu navegador no es compatible con la API de síntesis de voz.");
     }
   }
 

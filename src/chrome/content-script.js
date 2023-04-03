@@ -1,5 +1,5 @@
 function generateVoice(text) {
-  chrome.runtime.sendMessage({ sender: "voice", text });
+  chrome.runtime.sendMessage({ type: "voice", text });
 }
 
 function awaitChatToStopTalking() {
@@ -43,6 +43,6 @@ chrome.runtime.onMessage.addListener((message) => {
   }
   if (message.type === "ask-location") {
     const isChat = location.hostname === "chat.openai.com";
-    chrome.runtime.sendMessage({ sender: "is-chat", text: isChat });
+    chrome.runtime.sendMessage({ type: "is-chat", text: isChat });
   }
 });
