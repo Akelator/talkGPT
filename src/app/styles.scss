@@ -9,3 +9,10 @@ body {
   background-color: transparent;
   border-radius: 4px;
 }
+.vector {
+  background-color: var(--white);
+  -webkit-mask-size: 100%;
+  mask-size: 100%;
+  width: 100%;
+  height: 100%;
+}

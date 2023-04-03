@@ -1,5 +1,8 @@
+@use "sass:math";
+
+$btn-size: 80px;
+
 :host {
-  --size: 80px;
   width: 100%;
   height: 140px;
   position: absolute;
@@ -10,12 +13,12 @@
   justify-content: center;
 }
 .btn {
-  width: calc(var(--size) + 4px);
-  height: calc(var(--size) + 4px);
+  width: calc($btn-size + 4px);
+  height: calc($btn-size + 4px);
   background-color: var(--grey-1);
   position: relative;
   transition: var(--transition);
-  border-radius: calc((var(--size) + 4px) / 2);
+  border-radius: calc(($btn-size + 4px) / 2);
   &.recording {
     transform: scale(1.2);
     .bubble {
@@ -27,9 +30,9 @@
     position: absolute;
     top: 2px;
     left: 2px;
-    width: var(--size);
-    height: var(--size);
-    border-radius: calc(var(--size) / 2);
+    width: $btn-size;
+    height: $btn-size;
+    border-radius: calc($btn-size / 2);
     border: 5px solid var(--green-3);
     animation-name: animatewaves;
     animation-duration: 1.1s;
@@ -37,12 +40,12 @@
   }
   .bubble {
     transition: var(--transition);
-    border-radius: calc(var(--size) / 2);
+    border-radius: calc($btn-size / 2);
     position: absolute;
     top: 2px;
     left: 2px;
-    width: var(--size);
-    height: var(--size);
+    width: $btn-size;
+    height: $btn-size;
     background-color: var(--green-1);
     .mic {
       pointer-events: none;
@@ -50,13 +53,15 @@
       position: absolute;
       top: 0px;
       left: 0px;
-      width: var(--size);
-      height: var(--size);
-      background-image: url("../../vector/mic.svg");
-      background-size: contain;
+      width: $btn-size;
+      height: $btn-size;
       opacity: 1;
       &.off {
         opacity: 0;
+      }
+      .vector {
+        -webkit-mask-image: url("../../vector/mic.svg");
+        mask-image: url("../../vector/mic.svg");
       }
     }
     .chat {
@@ -65,15 +70,17 @@
       position: absolute;
       top: 0px;
       left: 0px;
-      width: var(--size);
-      height: var(--size);
-      background-image: url("../../vector/chat.svg");
-      background-size: contain;
+      width: $btn-size;
+      height: $btn-size;
       opacity: 0;
       animation: animacionChat 2s infinite;
       animation-timing-function: linear;
       &.on {
         opacity: 1;
+      }
+      .vector {
+        -webkit-mask-image: url("../../vector/chat.svg");
+        mask-image: url("../../vector/chat.svg");
       }
     }
     app-waveform {
@@ -82,7 +89,7 @@
       position: absolute;
       top: 5px;
       left: 5px;
-      transform: scale(0.875);
+      transform: scale(math.div(0.875, math.div(1, math.div($btn-size, 80px))));
       transform-origin: top left;
       opacity: 0;
       &.on {

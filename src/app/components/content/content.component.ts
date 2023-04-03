@@ -11,7 +11,7 @@ import { AvailabilityService, ChromeService, Speech2TextService, SubSink, Text2S
 export class ContentComponent implements AfterViewInit, OnDestroy {
   private _sub = new SubSink();
 
-  isChat: boolean = false;
+  isChat: boolean = true;
   response: string = "";
   recording: boolean = false;
   writting: boolean = true;

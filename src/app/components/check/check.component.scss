@@ -1,5 +1,5 @@
 :host {
-  --size: 20px;
+  --check-size: 20px;
   display: flex;
   font-size: 16px;
 }
@@ -9,8 +9,8 @@
 .switch {
   position: relative;
   display: inline-block;
-  width: calc(var(--size) * 2);
-  height: calc(var(--size) + 4px);
+  width: calc(var(--check-size) * 2);
+  height: calc(var(--check-size) + 4px);
 }
 .switch input {
   display: none;
@@ -24,13 +24,13 @@
   bottom: 0;
   background-color: var(--grey-1);
   transition: var(--transition);
-  border-radius: calc(var(--size) + 4px);
+  border-radius: calc(var(--check-size) + 4px);
 }
 .slider:before {
   position: absolute;
   content: "";
-  height: calc(var(--size) - 4px);
-  width: calc(var(--size) - 4px);
+  height: calc(var(--check-size) - 4px);
+  width: calc(var(--check-size) - 4px);
   left: 4px;
   bottom: 4px;
   background-color: var(--grey-3);
@@ -41,5 +41,5 @@ input:checked + .slider::before {
   background-color: var(--green-2);
 }
 input:checked + .slider:before {
-  transform: translateX(calc(var(--size) - 4px));
+  transform: translateX(calc(var(--check-size) - 4px));
 }
