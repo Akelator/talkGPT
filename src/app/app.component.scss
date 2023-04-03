@@ -25,14 +25,14 @@
   .icon {
     width: 24px;
     height: 24px;
-    background-image: url("assets/icon.svg");
+    background-image: url("vector/icon.svg");
     background-size: contain;
     margin-right: 10px;
     &.red {
-      background-image: url("assets/icon-r.svg");
+      background-image: url("vector/icon-r.svg");
     }
     &.light {
-      background-image: url("assets/icon-l.svg");
+      background-image: url("vector/icon-l.svg");
     }
   }
   height: 40px;
@@ -63,14 +63,14 @@
     }
     .menu {
       opacity: 1;
-      background-image: url("assets/menu.svg");
+      background-image: url("vector/menu.svg");
       &.off {
         opacity: 0;
       }
     }
     .close {
       opacity: 0;
-      background-image: url("assets/close.svg");
+      background-image: url("vector/close.svg");
       &.on {
         opacity: 1;
       }
