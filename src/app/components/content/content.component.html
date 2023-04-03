@@ -23,8 +23,8 @@
     <ng-container *ngIf="isChat; else notChat">
         <app-options [class.on]="optionsOpened"></app-options>
         <app-buttons [recording]="recording"
-                     [writting]="speaking"
-                     [speaking]="writting"
+                     [writting]="writting"
+                     [speaking]="speaking"
                      (start)="start()"></app-buttons>
     </ng-container>
     <ng-template #notChat>
