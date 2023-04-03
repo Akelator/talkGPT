@@ -8,7 +8,9 @@
 /tmp
 /out-tsc
 /bazel-out
-
+.angulardoc.json
+.browserslistrc
+.editorconfig
 # Node
 /node_modules
 npm-debug.log
