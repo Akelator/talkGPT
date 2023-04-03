@@ -1,7 +1,9 @@
-import { AvailabilityService } from './availability.service';
-import { ChromeService } from 'src/api/chrome.service';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
+import { ChromeService } from 'src/api/chrome.service';
+
+import { AvailabilityService } from './availability.service';
+
 declare var webkitSpeechRecognition: any;
 
 @Injectable({

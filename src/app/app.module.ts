@@ -1,15 +1,12 @@
-import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { WaveformComponent } from './components/waveform/waveform.component';
 import { ButtonsComponent } from './components/buttons/buttons.component';
-import { OptionsComponent } from './components/options/options.component';
 import { CheckComponent } from './components/check/check.component';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { OptionsComponent } from './components/options/options.component';
+import { WaveformComponent } from './components/waveform/waveform.component';
 
 @NgModule({
   declarations: [
@@ -19,13 +16,7 @@ import { FormsModule } from '@angular/forms';
     OptionsComponent,
     CheckComponent,
   ],
-  imports: [
-    HttpClientModule,
-    BrowserModule,
-    AppRoutingModule,
-    CommonModule,
-    FormsModule,
-  ],
+  imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
