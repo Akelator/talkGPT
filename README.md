@@ -1,4 +1,16 @@
-# Para hacer que furule
+## TalkGPT
+
+- Extensión chorra para Chrome para hablar con chatGPT.
+
+- ¿Cansado de escribir tus preguntas chorras?
+
+- Con esta extensión podrás dictarlas con tu voz.
+
+- ¿Cansado de leer lineas y más lineas de respuestas chorras?
+
+- Con esta extensión podrás escuchar las chorradas que te contesta chatGPT.
+
+## Para hacer que furule
 
 - Primero te haces un `npm install`.
 
