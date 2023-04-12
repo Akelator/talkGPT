@@ -3,7 +3,7 @@
   "name": "TalkGPT",
   "description": "__MSG_appDesc__",
   "default_locale": "en",
-  "version": "1.0",
+  "version": "1.0.1",
   "action": {
     "default_icon": "assets/icon-r.png",
     "default_popup": "index.html"
